@@ -1,0 +1,7 @@
+name: "auto-generated-pkg-2fa754e4-cbfe-4472-94c4-1747215bf38e"
+productVersion: "7.0.0-SNAPSHOT"
+data:
+- locator: "composite-blueprint/CentOSBase.yaml"
+  name: "CentOS Base vRA Blueprint"
+  description: "Simple vRA Blueprint for 64-bit CentOS 7.0 VM"
+exportTime: "2015-11-09T21:59:36.062Z"

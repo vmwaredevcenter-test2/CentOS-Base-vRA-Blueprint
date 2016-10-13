@@ -1,0 +1,66 @@
+id: CentOSBase
+name: CentOS Base
+description: CentOS 64-bit CORP Base Image (vSphere)
+status: PUBLISHED
+properties:
+  _archiveDays: 90
+components:
+  CentOS_Base:
+    type: Infrastructure.CatalogItem.Machine.Virtual.vSphere
+    data:
+      _cluster:
+        fixed: 1
+        min: 1
+      action:
+        fixed: LinkedClone
+      allow_storage_policies:
+        fixed: false
+      blueprint_type:
+        fixed: '1'
+      cpu:
+        fixed: 1
+        min: 1
+      description: CentOS 64-bit Base Image
+      disks:
+      - capacity: 3
+        custom_properties: null
+        id: -1
+        initial_location: ''
+        is_clone: true
+        label: Hard disk 1
+        storage_reservation_policy: ''
+        userCreated: false
+        volumeId: 0
+      display_location:
+        fixed: false
+      guest_customization_specification: CentOS
+      machine_prefix:
+        fixed:
+          id: dev
+      max_network_adapters: {}
+      max_volumes: {}
+      memory:
+        fixed: 512
+        min: 512
+      nics:
+        fixed: []
+      provisioning_workflow:
+        fixed:
+          id: CloneWorkflow
+          label: CloneWorkflow
+      security_groups: []
+      security_tags: []
+      source_machine:
+        fixed:
+          id: 81f189cb-6edb-4889-8783-223ebbadecc3
+          label: linux-base-01a
+      source_machine_name:
+        fixed: linux-base-01a
+      source_machine_vmsnapshot:
+        fixed:
+          id: '-1'
+      storage:
+        fixed: 3
+        min: 3
+layout:
+  CentOS_Base: 0,0
